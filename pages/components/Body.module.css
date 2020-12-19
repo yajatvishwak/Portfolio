@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+.greetings {
+  font-size: 2rem;
+  margin-bottom: -30px;
+  font-family: "Comfortaa";
+  font-weight: bold;
+  color: #ececec;
+}
+.name {
+  font-size: 120px;
+  text-align: center;
+  color: #c1a57b;
+  font-family: "Abril Fatface", cursive;
+}
+@media screen and (min-width: 6em) and (max-width: 64em) {
+  .name {
+    font-size: 3rem;
+    text-align: center;
+    color: #c1a57b;
+    font-family: "Abril Fatface", cursive;
+  }
+  .greetings {
+    font-size: 2rem;
+    margin: 20px;
+    font-family: "Comfortaa";
+    font-weight: bold;
+    color: #ececec;
+  }
+}
