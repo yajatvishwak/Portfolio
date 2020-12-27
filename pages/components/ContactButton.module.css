@@ -1,6 +1,12 @@
 .container {
   padding: 1rem;
+  font-family: "Abril Fatface";
   background-color: #ececec;
   width: fit-content;
   border-radius: 10px;
+  transition: 0.5s;
+}
+.container:hover {
+  background-color: #c1a57b;
+  color: #ececec;
 }

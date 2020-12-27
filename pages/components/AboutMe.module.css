@@ -14,15 +14,29 @@
   margin: 2rem;
   color: #ececee;
   font-family: "Comfortaa";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .contactMe {
   margin: 2rem;
+  position: relative;
+  top: -150px;
+  align-self: center;
 }
+.picture {
+  width: 20em;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
 @media screen and (min-width: 120em) and (max-width: 160em) {
   .content {
     margin-left: 15rem;
     margin-right: 15rem;
     font-size: 1.7rem;
+    display: flex;
+    flex-wrap: nowrap;
   }
   .title {
     margin-left: 15rem;
@@ -31,5 +45,9 @@
   }
   .contactMe {
     margin-left: 15rem;
+    align-self: flex-start;
+  }
+  .picture {
+    width: 19rem;
   }
 }
