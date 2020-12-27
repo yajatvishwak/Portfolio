@@ -15,6 +15,9 @@
   color: #ececee;
   font-family: "Comfortaa";
 }
+.contactMe {
+  margin: 2rem;
+}
 @media screen and (min-width: 120em) and (max-width: 160em) {
   .content {
     margin-left: 15rem;
@@ -25,5 +28,8 @@
     margin-left: 15rem;
     margin-right: 15rem;
     font-size: 4rem;
+  }
+  .contactMe {
+    margin-left: 15rem;
   }
 }

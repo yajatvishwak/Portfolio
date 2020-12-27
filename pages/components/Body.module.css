@@ -4,9 +4,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   height: 100vh;
+  width: 100%;
 }
+
 .greetings {
   font-size: 2rem;
   margin-bottom: -30px;
@@ -20,6 +21,54 @@
   color: #c1a57b;
   font-family: "Abril Fatface", cursive;
 }
+.navigation {
+  background-color: #30475e;
+  font-family: "Comfortaa";
+  position: relative;
+  display: inline-block;
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+  width: fit-content;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+.pill {
+  margin: 1rem;
+  margin-left: 0;
+
+  transition: 0.5s;
+}
+.pill:hover {
+  color: #c1a57b;
+}
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #30475e;
+  color: #ececec;
+  min-width: 10rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border-top-left-radius: 0rem;
+  margin-left: -1rem;
+  z-index: 1;
+  animation: fadeIn 1s;
+}
+.navigation:hover .dropdownContent {
+  display: block;
+}
+.navigation:hover {
+  display: block;
+  background-color: #213141;
+  color: #929292;
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+}
+
 @media screen and (min-width: 6em) and (max-width: 64em) {
   .name {
     font-size: 3rem;
@@ -28,10 +77,22 @@
     font-family: "Abril Fatface", cursive;
   }
   .greetings {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 20px;
     font-family: "Comfortaa";
     font-weight: bold;
     color: #ececec;
+  }
+  .navigation {
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

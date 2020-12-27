@@ -16,8 +16,9 @@ const AboutMe = () => {
         which comprises of my works, achievements and failures. Looking forward
         to see you in my DMs soon!
       </div>
-
-      <ContactButton />
+      <div className={style.contactMe}>
+        <ContactButton />
+      </div>
     </div>
   );
 };
