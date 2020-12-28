@@ -10,3 +10,9 @@
   background-color: #c1a57b;
   color: #ececec;
 }
+@media screen and (min-width: 120em) and (max-width: 160em) {
+  .container {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+  }
+}

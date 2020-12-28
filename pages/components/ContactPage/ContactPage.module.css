@@ -1,0 +1,29 @@
+.container {
+  font-family: "Abril Fatface";
+  margin: 2rem;
+}
+.title {
+  font-size: 3rem;
+  color: #ececec;
+}
+.cardContainer {
+  display: flex;
+  margin: 3rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 120em) and (max-width: 160em) {
+  .container {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-size: 1.7rem;
+  }
+  .title {
+    font-size: 5rem;
+    margin-left: 4rem;
+    color: #ececec;
+  }
+}
